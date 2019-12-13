@@ -1,0 +1,36 @@
+.middle {
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+.mouse {
+    width: 30px;
+    height: 60px;
+    border: 4px solid #fff;
+    border-radius: 60px;
+}
+.mouse::before {
+    content: "";
+    width: 5px;
+    height: 10px;
+    position: absolute;
+    top: 30px;
+    background-color: #FFF;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 30%;
+    opacity: 1;
+    animation: mouse 2s infinite;
+}
+@keyframes mouse {
+    from {
+        opacity: 1;
+        top: 10px;
+    }
+    to {
+        opacity: 0;
+        top: 55px;
+    }
+}
